@@ -13,6 +13,7 @@
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -22,14 +23,14 @@
             <!-- SEARCH -->
             <form class="col s12">
                 <div class="row">
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="searchInput" class="materialize-textarea"></textarea>
-                    <label for="searchInput">Search Cards</label>
-                </div>
-                <div style="padding: 20px 0;">
-                    <a class="waves-effect waves-light btn" id="searchButton">button</a>
-                </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">search</i>
+                        <input id="searchInput" type="text" class="validate">
+                        <label for="searchInput">Enter Card Name</label>
+                    </div>
+                    <div style="padding: 20px 0;">
+                        <a class="waves-effect waves-light btn" id="searchButton">button</a>
+                    </div>
                 </div>
             </form>
 
@@ -43,21 +44,6 @@
             </thead>
     
             <tbody>
-                <tr>
-                    <td>pica</td>
-                    <td>Eclair</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>picb</td>
-                    <td>Jellybean</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>picc</td>
-                    <td>Lollipop</td>
-                    <td>124</td>
-                </tr>
             </tbody>
             </table>
 
@@ -65,7 +51,6 @@
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
